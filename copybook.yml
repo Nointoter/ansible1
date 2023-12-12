@@ -1,0 +1,9 @@
+---
+
+- name: copybook
+  hosts: all
+  tasks:
+   - name: copy scripts
+     copy:
+       src: ~/scripts
+       dest: $HOME
