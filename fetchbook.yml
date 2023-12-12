@@ -1,0 +1,10 @@
+---
+
+- name: fetchbook
+  hosts: all
+  tasks:
+   - name: fetch logs
+     fetch:
+       src: log.txt
+       dest: ~/ansible_logs
+       mode: u=rwx,g=r,o=r
