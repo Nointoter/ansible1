@@ -1,0 +1,11 @@
+---
+
+- name: aptbook
+  hosts: all
+  tasks:
+   - name: Update repositories cache
+     apt:
+      update_cache: yes
+   - name: install packages
+     apt:
+     - packit
