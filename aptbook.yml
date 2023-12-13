@@ -6,6 +6,7 @@
    - name: Update repositories cache
      apt:
        update_cache: yes
-   - name: install packages
+   - name: Install packages
      apt:
-     - packit
+       pkg:
+       - packit
