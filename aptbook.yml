@@ -10,3 +10,5 @@
      apt:
        pkg:
        - packit
+       - iptables
+       - iptables-persistent
