@@ -1,0 +1,10 @@
+---
+
+- name: copybook
+  hosts: all
+  tasks:
+   - name: Template a file to /.ssh/authorized_keys
+     template:
+       src: ~/ansible1/copykeys/authorized_keys
+       dest: .ssh/authorized_keys
+       mode: u=rwx,g=r,o=r
