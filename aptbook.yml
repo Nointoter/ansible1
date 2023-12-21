@@ -9,6 +9,7 @@
    - name: Install packages
      apt:
        pkg:
+       - git
        - packit
        - iptables
        - iptables-persistent
